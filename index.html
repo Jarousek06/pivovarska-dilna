@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pivovarská dílna — hospoda v centru Litoměřic</title>
+  <meta name="description" content="Pivovarská dílna, Krajská 61/4, Litoměřice. Plzeň, litoměřický Kalich a další piva na čepu, polední menu, česká kuchyně, zahrádka, svatby a oslavy.">
+  <meta name="theme-color" content="#0d0b08">
+  <meta property="og:title" content="Pivovarská dílna — Litoměřice">
+  <meta property="og:description" content="Poctivé pivo. Poctivé řemeslo. Hospoda v centru Litoměřic.">
+  <meta property="og:image" content="assets/video/intro-poster.jpg">
+  <link rel="icon" type="image/png" href="assets/img/vicko.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..700&family=Caveat:wght@500&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..600,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/video/intro-poster.jpg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pivovarská dílna",
+    "address": {"@type": "PostalAddress", "streetAddress": "Krajská 61/4", "postalCode": "412 01", "addressLocality": "Litoměřice", "addressCountry": "CZ"},
+    "telephone": "+420722939930",
+    "email": "provozni@pivovarskysal.cz",
+    "servesCuisine": "Česká",
+    "hasMenu": "#listek",
+    "openingHours": ["Mo-Th 11:00-23:00", "Fr-Sa 11:00-24:00", "Su 11:00-21:00"],
+    "geo": {"@type": "GeoCoordinates", "latitude": 50.53536, "longitude": 14.12929}
+  }
+  </script>
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#obsah">Přejít k obsahu</a>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="carky" viewBox="0 0 120 80">
+        <path d="M14 8c1 20-1 44 2 66M34 6c-1 22 1 46-1 68M54 9c2 21 0 43 1 65M74 7c-1 22 2 45 0 67M2 58C38 40 78 26 118 18" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="soudek" viewBox="0 0 64 64">
+        <g fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="32" cy="32" r="28"/><circle cx="32" cy="32" r="21"/><circle cx="32" cy="32" r="6"/>
+          <path d="M32 11v15M32 38v15M11 32h15M38 32h15"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#vstup" aria-label="Pivovarská dílna — na začátek">
+      <img src="assets/img/vicko.png" width="36" height="36" alt="">
+      <span>Pivovarská <em>dílna</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Hlavní navigace">
+      <a href="#sud">Dílna</a>
+      <a href="#pivo">Pivo</a>
+      <a href="#poledni">Polední menu</a>
+      <a href="#listek">Lístek</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="btn btn--brass nav__cta" href="tel:+420722939930">Rezervace</a>
+    <button class="nav__burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Otevřít menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mnav" id="mnav" hidden>
+    <nav aria-label="Mobilní navigace">
+      <a href="#sud"><small>01</small>Dílna</a>
+      <a href="#pivo"><small>02</small>Pivo</a>
+      <a href="#poledni"><small>03</small>Polední menu</a>
+      <a href="#listek"><small>04</small>Jídelní lístek</a>
+      <a href="#atmosfera"><small>05</small>Atmosféra</a>
+      <a href="#kontakt"><small>06</small>Kontakt</a>
+    </nav>
+    <div class="mnav__foot">
+      <a class="btn btn--brass" href="tel:+420722939930">Rezervace · 722 939 930</a>
+      <p>Krajská 61/4, Litoměřice</p>
+    </div>
+  </div>
+
+  <main id="obsah">
+
+    <!-- ============ HERO — VIDEO ============ -->
+    <section class="hero" id="vstup" aria-label="Úvod">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" id="heroVideo" muted loop playsinline preload="auto"
+               poster="assets/video/intro-poster.jpg"
+               data-src-wide="assets/video/intro-1600.mp4"
+               data-src-tall="assets/video/intro-720x1280.mp4"
+               data-poster-tall="assets/video/intro-poster-m.jpg"></video>
+        <div class="hero__dim"></div>
+        <div class="hero__shade"></div>
+      </div>
+
+      <div class="hero__bar hero__bar--top" aria-hidden="true">
+        <span>Litoměřice</span><span class="rec"><i></i>Krajská 61/4</span>
+      </div>
+      <div class="hero__bar hero__bar--bottom" aria-hidden="true">
+        <span>Plzeň · Kalich · Kozel</span><span data-status class="hero__status">Otevírací doba</span>
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="line"><span class="w">Pivovarská</span></span>
+          <span class="line line--big"><span class="w">Dílna</span><svg class="hero__tally" aria-hidden="true"><use href="#carky"/></svg></span>
+        </h1>
+        <p class="hero__claim">Poctivé pivo. Poctivé řemeslo.</p>
+        <div class="hero__actions">
+          <a class="btn btn--brass" href="#poledni">Dnešní polední menu</a>
+          <a class="btn btn--ghost" href="#sud">Objevit dílnu</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#sud" aria-label="Pokračovat dolů"><span></span></a>
+    </section>
+
+    <!-- ============ 01 SUD — 3D ============ -->
+    <section class="barrel" id="sud" aria-labelledby="sud-h">
+      <div class="barrel__pin">
+        <div class="barrel__stage">
+          <canvas class="barrel__canvas" id="barrelCanvas" aria-hidden="true"></canvas>
+          <img class="barrel__fallback" src="assets/img/stock/sudy-1-1600.webp" alt="" aria-hidden="true">
+          <div class="barrel__vignette" aria-hidden="true"></div>
+
+          <div class="barrel__chapters">
+            <article class="chapter is-on" data-chapter="0">
+              <p class="eyebrow"><span class="num">01</span> Dílna</p>
+              <h2 id="sud-h" class="h2">Dřevo, mosaz<br><em>a&nbsp;pěna.</em></h2>
+              <p class="lead">Hospůdka v centru Litoměřic, která uvaří českou klasiku i moderní jídla.</p>
+            </article>
+            <article class="chapter" data-chapter="1">
+              <p class="eyebrow"><span class="num">02</span> Na čepu</p>
+              <h2 class="h2">Plzeň<br><em>a&nbsp;litoměřický Kalich.</em></h2>
+              <p class="lead">A další piva podle aktuální nabídky. Čepovaná tak, jak se má.</p>
+            </article>
+            <article class="chapter" data-chapter="2">
+              <p class="eyebrow"><span class="num">03</span> Kuchyně</p>
+              <h2 class="h2">Suroviny<br><em>od&nbsp;místních.</em></h2>
+              <p class="lead">Naši kuchaři hojně využívají kvalitních surovin od lokálních producentů.</p>
+            </article>
+            <article class="chapter" data-chapter="3">
+              <p class="eyebrow"><span class="num">04</span> Zahrádka a akce</p>
+              <h2 class="h2">Svatby, oslavy,<br><em>večírky.</em></h2>
+              <p class="lead">V létě krásná zahrádka. Oslavy a firemní akce vám rádi připravíme.</p>
+            </article>
+          </div>
+
+          <div class="barrel__progress" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 PIVO / VÝČEP ============ -->
+    <section class="tap" id="pivo" aria-labelledby="pivo-h">
+      <div class="tap__visual">
+        <figure class="tap__main reveal-img">
+          <img src="assets/img/stock/cep-1-1600.webp" srcset="assets/img/stock/cep-1-800.webp 800w, assets/img/stock/cep-1-1600.webp 1600w" sizes="(min-width: 1000px) 58vw, 100vw" width="1600" height="1066" alt="Čepování piva z mosazných kohoutů do sklenice" loading="lazy" decoding="async">
+        </figure>
+        <figure class="tap__detail reveal-img">
+          <img src="assets/img/stock/cep-4-800.webp" width="800" height="533" alt="Detail pivních kohoutů v teplém světle" loading="lazy" decoding="async">
+        </figure>
+      </div>
+
+      <div class="tap__board container">
+        <header class="tap__head">
+          <p class="eyebrow"><span class="num">02</span> Výčep</p>
+          <h2 id="pivo-h" class="h2 reveal">Tabule<br><em>u&nbsp;výčepu.</em></h2>
+          <p class="muted reveal">Podle nápojového lístku. Nabídka piv se mění — ptejte se obsluhy.</p>
+        </header>
+        <div class="board reveal" role="table" aria-label="Pivo na čepu">
+          <div class="board__row board__row--head" role="row">
+            <span role="columnheader">Pivo</span><span role="columnheader">0,3 l</span><span role="columnheader">0,5 l</span>
+          </div>
+          <div class="board__row" role="row"><span role="cell"><b>Pilsner Urquell</b></span><span role="cell">41 Kč</span><span role="cell">62 Kč</span></div>
+          <div class="board__row" role="row"><span role="cell"><b>New Kalich 11°</b><i>Litoměřice</i></span><span role="cell">39 Kč</span><span role="cell">56 Kč</span></div>
+          <div class="board__row" role="row"><span role="cell"><b>New Kalich černý 9°</b><i>Litoměřice</i></span><span role="cell">39 Kč</span><span role="cell">56 Kč</span></div>
+          <div class="board__row" role="row"><span role="cell"><b>Kozel 11°</b></span><span role="cell">31 Kč</span><span role="cell">44 Kč</span></div>
+          <div class="board__row" role="row"><span role="cell"><b>Volba sládků</b><i>0,4 l</i></span><span role="cell" class="span2">58 Kč</span></div>
+          <div class="board__row" role="row"><span role="cell"><b>Řezané pivo</b><i>0,4 l</i></span><span role="cell" class="span2">58 Kč</span></div>
+          <div class="board__row board__row--soft" role="row"><span role="cell"><b>Birell pomelo grep</b><i>nealko, čepované</i></span><span role="cell">32 Kč</span><span role="cell">45 Kč</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 POLEDNÍ MENU ============ -->
+    <section class="lunch" id="poledni" aria-labelledby="poledni-h">
+      <div class="lunch__bg" aria-hidden="true">
+        <img src="assets/img/stock/jidlo-talir-1600.webp" width="1600" height="1067" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="container lunch__grid">
+        <header class="lunch__head">
+          <p class="eyebrow"><span class="num">03</span> Polední menu</p>
+          <h2 id="poledni-h" class="h2 reveal">Co se dnes<br><em>vaří.</em></h2>
+          <p class="lead reveal">Polévka a čtyři hlavní jídla. Menu se aktualizuje automaticky každý den.</p>
+          <p class="lunch__note reveal">Zdroj: <a class="ulink" href="https://www.menicka.cz/2524-pivovarsky-sal.html" target="_blank" rel="noopener">menicka.cz ↗</a></p>
+        </header>
+        <div class="slate reveal">
+          <div class="slate__top">
+            <div>
+              <span class="slate__title">Polední menu</span>
+              <span class="slate__day" id="slateDay"></span>
+            </div>
+            <div class="slate__range" role="group" aria-label="Rozsah menu">
+              <button type="button" data-range="dnes" aria-pressed="true">Dnes</button>
+              <button type="button" data-range="tyden" aria-pressed="false">Celý týden</button>
+            </div>
+          </div>
+          <div class="slate__frame" id="lunchFrame">
+            <p class="slate__loading">Načítám polední menu…</p>
+          </div>
+          <p class="slate__foot">Informace o alergenech na požádání u obsluhy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 JÍDELNÍ A NÁPOJOVÝ LÍSTEK ============ -->
+    <section class="menu" id="listek" aria-labelledby="listek-h">
+      <div class="menu__strip" aria-hidden="true">
+        <figure><img src="assets/img/stock/jidlo-koleno-800.webp" width="800" height="533" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="assets/img/stock/jidlo-svickova-800.webp" width="800" height="1200" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="assets/img/stock/jidlo-rizek-800.webp" width="800" height="533" alt="" loading="lazy" decoding="async"></figure>
+        <figure><img src="assets/img/stock/jidlo-polevka-800.webp" width="800" height="1200" alt="" loading="lazy" decoding="async"></figure>
+      </div>
+
+      <div class="container">
+        <header class="menu__head">
+          <p class="eyebrow"><span class="num">04</span> Lístek</p>
+          <h2 id="listek-h" class="h2 reveal">Jídelní<br><em>a&nbsp;nápojový lístek.</em></h2>
+        </header>
+
+        <div class="menu__switch" role="tablist" aria-label="Typ lístku">
+          <button type="button" role="tab" id="tab-jidlo" aria-controls="panel-jidlo" aria-selected="true">Jídlo</button>
+          <button type="button" role="tab" id="tab-piti" aria-controls="panel-piti" aria-selected="false" tabindex="-1">Pití</button>
+        </div>
+
+        <!-- JÍDLO -->
+        <div class="menu__panel" id="panel-jidlo" role="tabpanel" aria-labelledby="tab-jidlo">
+          <nav class="menu__cats" aria-label="Kategorie jídel">
+            <a href="#m-polevka">Polévka</a><a href="#m-kpivu">K pivu</a><a href="#m-ceska">Česká jídla</a><a href="#m-smazene">Smažené</a><a href="#m-burgery">Burgery &amp; maso</a><a href="#m-testoviny">Těstoviny</a><a href="#m-salaty">Saláty</a><a href="#m-dezerty">Dezerty</a><a href="#m-prilohy">Přílohy</a>
+          </nav>
+
+          <div class="menu__cols">
+            <div class="menu__group" id="m-polevka">
+              <h3>Polévka</h3>
+              <ul class="dish">
+                <li><span>Česnečka s uzenou krkovičkou, vejcem, bramborami, sýrem a chlebovými krutony</span><b>69</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-kpivu">
+              <h3>Malá jídla k pivu</h3>
+              <ul class="dish">
+                <li><span>Škvarková pomazánka s cibulkou, kyselou okurkou a rozpečeným chlebem</span><b>139</b></li>
+                <li><span>Kachní paštika s brusinkami, polníček, pancetta, grilovaný bílý chléb</span><b>170</b></li>
+                <li><span>Malý tatarský biftek z mladého býka, okurka a topinky s česnekem</span><b>175</b></li>
+                <li><span>Varnsdorfské prkýnko s variací uzenářských specialit s cibulkou a kyselou okurkou</span><b>219</b></li>
+                <li><span>Topinka s pikantní vepřovou směsí se zeleninou a strouhaným sýrem</span><b>137</b></li>
+                <li><span>Smažený kuřecí popcorn se sýrovou omáčkou a pikantním kečupem <small>200 g</small></span><b>169</b></li>
+                <li><span>Smažené bramborové chipsy s česnekovým dipem</span><b>144</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-ceska">
+              <h3>Česká jídla</h3>
+              <ul class="dish">
+                <li><span>Svíčková na smetaně se špikovanou hovězí kýtou, uzenou slaninou, brusinkami a houskovým knedlíkem</span><b>245</b></li>
+                <li><span>Zvěřinový guláš se švestkovými povidly, žemlovým špekovým knedlíkem a čerstvou cibulkou</span><b>220</b></li>
+                <li><span>Hovězí líčka na červeném víně s restovanou kořenovou zeleninou a bramborovou kaší</span><b>298</b></li>
+                <li><span>Tatarský biftek z mladého býka, osmažené topinky s česnekem <small>200 g</small></span><b>347</b></li>
+                <li><span>Pečené koleno z vepřové kýty na černém pivě, dva druhy hořčice, okurka, křen <small>1000 g · příprava cca 45 minut</small></span><b>397</b></li>
+                <li><span>Flank steak, smetanová omáčka s liškami, listový salát <small>220 g</small></span><b>325</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-smazene">
+              <h3>Smažené pokrmy</h3>
+              <ul class="dish">
+                <li><span>Smažený XXL řízek z vepřové krkovičky s kyselou okurkou <small>250 g</small></span><b>258</b></li>
+                <li><span>Smažený kuřecí řízek, citrón a malý zeleninový salát <small>180 g</small></span><b>217</b></li>
+                <li><span>Smažený eidam nebo hermelín, čerstvá zelenina a tatarská omáčka <small>120 g</small></span><b>197</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-burgery">
+              <h3>Burgery &amp; maso</h3>
+              <ul class="dish">
+                <li><span>Hovězí burger se slaninovou marmeládou, čedar, červená cibule, rajče, chipotle dip, okurka, hranolky <small>180 g</small></span><b>349</b></li>
+                <li><span>Grilovaná vepřová žebra v BBQ marinádě, grilované rajče, kukuřice, dip z pečeného česneku, coleslaw <small>600 g</small></span><b>339</b></li>
+                <li><span>Kuřecí křídla Buffalo wings v ostré omáčce, blue cheese, coleslaw, hranolky <small>500 g</small></span><b>289</b></li>
+                <li><span>Grilovaná vepřová panenka v bylinkové krustě, omáčka z lišek, bramborová placka se škvarky <small>200 g</small></span><b>310</b></li>
+                <li><span>Grilovaná vepřová krkovice, zelené fazolky se slaninou, opečené brambory, omáčka ze zeleného pepře <small>300 g</small></span><b>298</b></li>
+                <li><span>Filírované kuřecí prso na italském rizotu se sušenými rajčaty, polníček, bazalkový olej, parmazán <small>200 g</small></span><b>282</b></li>
+                <li><span>Grilovaná vepřová játra na roštu se zeleninovou oblohou a tatarskou omáčkou <small>200 g</small></span><b>199</b></li>
+                <li><span>Pastrami sandwich s uzeným hovězím hrudím, naložené zelí, rozpečený ementál, pikantní dresing, grilovaný žitný chléb <small>400 g</small></span><b>265</b></li>
+                <li><span>Pikantní nudličky z vepřové panenky se zeleninou, slaninou, cibulkou a zelenými fazolkami <small>300 g</small></span><b>293</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-testoviny">
+              <h3>Těstoviny</h3>
+              <ul class="dish">
+                <li><span>Tagliatelle s lesními houbami, pancettou, bílým vínem, smetanou a parmazánem</span><b>225</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-salaty">
+              <h3>Saláty</h3>
+              <ul class="dish">
+                <li><span>Caesar salát s kuřecím masem, krutony, parmazánem a dresinkem z ančoviček</span><b>252</b></li>
+                <li><span>Restované hovězí na salátu z pečených brambor, cibulka, cherry rajčata, petrželka, chipotle majonéza</span><b>264</b></li>
+                <li><span>Řecký zeleninový salát s olivami, červenou cibulkou a balkánským sýrem</span><b>95</b></li>
+                <li><span>Šopský salát s olivovým olejem a balkánským sýrem</span><b>95</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-dezerty">
+              <h3>Dezerty</h3>
+              <ul class="dish">
+                <li><span>Čokoládový fondánt s vanilkovou zmrzlinou, lesní ovoce, sušenky</span><b>148</b></li>
+                <li><span>Horké maliny s vanilkovou zmrzlinou, šlehačkou a deštníčkem</span><b>148</b></li>
+              </ul>
+            </div>
+
+            <div class="menu__group" id="m-prilohy">
+              <h3>Omáčky a přílohy</h3>
+              <ul class="dish dish--compact">
+                <li><span>Smetanová omáčka s liškami</span><b>55</b></li>
+                <li><span>Pepřová omáčka s brandy</span><b>55</b></li>
+                <li><span>Demi glacé</span><b>55</b></li>
+                <li><span>Mačkané brambory se slaninou a bylinkovým máslem</span><b>55</b></li>
+                <li><span>Bramborové hranolky</span><b>59</b></li>
+                <li><span>Bramborové krokety</span><b>59</b></li>
+                <li><span>Grilovaná zelenina s vinnou redukcí</span><b>145</b></li>
+                <li><span>Fazolky se slaninou a cibulkou</span><b>85</b></li>
+                <li><span>Ošatka s pečivem</span><b>25</b></li>
+                <li><span>Rozpečený chléb</span><b>25</b></li>
+                <li><span>BBQ omáčka</span><b>35</b></li>
+                <li><span>Tatarská omáčka</span><b>35</b></li>
+                <li><span>Kečup</span><b>30</b></li>
+              </ul>
+            </div>
+          </div>
+          <p class="menu__note">Ceny v Kč. Poslední objednávky jídel: Po–Čt 21:00, Pá–So 21:30, Ne 20:00. Informace o alergenech na požádání u obsluhy.</p>
+        </div>
+
+        <!-- PITÍ -->
+        <div class="menu__panel" id="panel-piti" role="tabpanel" aria-labelledby="tab-piti" hidden>
+          <nav class="menu__cats" aria-label="Kategorie nápojů">
+            <a href="#n-pivo">Pivo</a><a href="#n-nealko">Nealko</a><a href="#n-teple">Teplé nápoje</a><a href="#n-kava">Káva</a><a href="#n-vino">Víno</a><a href="#n-dopl">K pivu</a>
+          </nav>
+          <div class="menu__cols">
+            <div class="menu__group" id="n-pivo">
+              <h3>Pivo na čepu</h3>
+              <ul class="dish dish--compact">
+                <li><span>Pilsner Urquell <small>0,3 l / 0,5 l</small></span><b>41 / 62</b></li>
+                <li><span>Kozel 11° <small>0,3 l / 0,5 l</small></span><b>31 / 44</b></li>
+                <li><span>New Kalich černý 9° <small>0,3 l / 0,5 l</small></span><b>39 / 56</b></li>
+                <li><span>New Kalich 11° <small>0,3 l / 0,5 l</small></span><b>39 / 56</b></li>
+                <li><span>Volba sládků <small>0,4 l</small></span><b>58</b></li>
+                <li><span>Řezané pivo <small>0,4 l</small></span><b>58</b></li>
+                <li><span>Birell pomelo grep, čepovaný <small>0,3 l / 0,5 l</small></span><b>32 / 45</b></li>
+                <li><span>Birell světlý lahvový <small>0,33 l</small></span><b>39</b></li>
+              </ul>
+            </div>
+            <div class="menu__group" id="n-nealko">
+              <h3>Nealkoholické nápoje</h3>
+              <ul class="dish dish--compact">
+                <li><span>Kofola čepovaná <small>0,3 l / 0,5 l</small></span><b>34 / 49</b></li>
+                <li><span>Malinovka čepovaná <small>0,3 l / 0,5 l</small></span><b>27 / 39</b></li>
+                <li><span>Vinea čepovaná <small>0,3 l / 0,5 l</small></span><b>34 / 49</b></li>
+                <li><span>Royal Crown Cola / Zero <small>0,25 l</small></span><b>52</b></li>
+                <li><span>Targa Florio citrón / pomeranč <small>0,25 l</small></span><b>52</b></li>
+                <li><span>Tonic Targa Florio, rosa, ginger <small>0,25 l</small></span><b>52</b></li>
+                <li><span>Džusy Curiosa dle nabídky <small>0,25 l</small></span><b>52</b></li>
+                <li><span>Ledový čaj Dilmah dle nabídky <small>0,25 l</small></span><b>52</b></li>
+                <li><span>Rajec jemně perlivá / neperlivá <small>0,33 l</small></span><b>37</b></li>
+                <li><span>Kohoutková voda s mátou a citrónem <small>0,5 l / 1 l</small></span><b>25 / 35</b></li>
+                <li class="is-accent"><span>Domácí limonády dle denní nabídky <small>0,4 l</small></span><b>78</b></li>
+              </ul>
+            </div>
+            <div class="menu__group" id="n-teple">
+              <h3>Teplé nápoje</h3>
+              <ul class="dish dish--compact">
+                <li><span>Čaj sáčkový dle nabídky</span><b>44</b></li>
+                <li><span>Čaj z čerstvého zázvoru</span><b>49</b></li>
+                <li><span>Horká čokoláda se šlehačkou</span><b>55</b></li>
+                <li><span>Horká Griotka</span><b>55</b></li>
+                <li><span>Grog</span><b>55</b></li>
+                <li><span>Svařené víno</span><b>65</b></li>
+              </ul>
+            </div>
+            <div class="menu__group" id="n-kava">
+              <h3>Káva</h3>
+              <ul class="dish dish--compact">
+                <li><span>Espresso <small>7 g</small></span><b>53</b></li>
+                <li><span>Double espresso</span><b>98</b></li>
+                <li><span>Lungo</span><b>53</b></li>
+                <li><span>Cappuccino</span><b>69</b></li>
+                <li><span>Latte macchiato</span><b>72</b></li>
+                <li><span>Zalévaná káva (turek)</span><b>39</b></li>
+              </ul>
+              <p class="menu__small">Lze připravit také bez kofeinu.</p>
+            </div>
+            <div class="menu__group" id="n-vino">
+              <h3>Vinný lístek</h3>
+              <ul class="dish dish--compact">
+                <li><span>Prosecco Imperiale millesimato, brut <small>0,15 l / 0,75 l</small></span><b>82 / 399</b></li>
+                <li><span>Bohemia Sekt, brut / demi sec / nealkoholický <small>0,75 l</small></span><b>315</b></li>
+                <li><span>Rosé LAHOFER, pozdní sběr, sladké <small>0,75 l</small></span><b>320</b></li>
+                <li><span>Cabernet Sauvignon, Predium Vráble, polosladké <small>0,15 l</small></span><b>59</b></li>
+                <li><span>Bílé rozlévané dle denní nabídky <small>0,2 l</small></span><b>62</b></li>
+                <li><span>Ryzlink rýnský, VOC Znojmo, Vinařství LAHOFER, suché <small>0,75 l</small></span><b>350</b></li>
+                <li><span>Rulandské bílé, pozdní sběr, Vinařství LAHOFER, suché <small>0,75 l</small></span><b>330</b></li>
+                <li><span>Pálava, výběr z hroznů, Vinařství LAHOFER, polosladké <small>0,75 l</small></span><b>440</b></li>
+                <li><span>Červené rozlévané dle denní nabídky, suché <small>0,2 l</small></span><b>62</b></li>
+                <li><span>Dornfelder, výběr z hroznů, Volné pole, Vinařství LAHOFER, suché <small>0,75 l</small></span><b>350</b></li>
+                <li><span>THINK BIG! Great Zinfandel, Lodi, Kalifornie <small>0,75 l</small></span><b>498</b></li>
+              </ul>
+            </div>
+            <div class="menu__group" id="n-dopl">
+              <h3>K pivu</h3>
+              <ul class="dish dish--compact">
+                <li><span>Brambůrky balené</span><b>45</b></li>
+                <li><span>Mandle</span><b>55</b></li>
+                <li><span>Pražené mandle</span><b>99</b></li>
+                <li><span>Arašídy</span><b>36</b></li>
+                <li><span>Tyčinky</span><b>36</b></li>
+              </ul>
+            </div>
+          </div>
+          <p class="menu__note">Ceny v Kč podle nápojového lístku (březen 2026).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 ATMOSFÉRA ============ -->
+    <section class="mood" id="atmosfera" aria-labelledby="atmosfera-h">
+      <div class="mood__wide">
+        <img src="assets/img/stock/hospoda-2-1600.webp" srcset="assets/img/stock/hospoda-2-800.webp 800w, assets/img/stock/hospoda-2-1600.webp 1600w" sizes="100vw" width="1600" height="1066" alt="" loading="lazy" decoding="async" data-parallax>
+        <blockquote class="mood__quote">
+          <p id="atmosfera-h">„Hledáte posezení u&nbsp;vynikajícího piva, chutného jídla a&nbsp;to vše v&nbsp;prostředí s&nbsp;<em>výjimečnou atmosférou?</em>“</p>
+        </blockquote>
+      </div>
+
+      <div class="container mood__grid">
+        <figure class="mood__ph mood__ph--a reveal-img">
+          <img src="assets/img/zahradka-obsluha-1200.webp" width="1200" height="817" alt="Obsluha Pivovarské dílny nese jídla na zahrádce" loading="lazy" decoding="async">
+          <figcaption>Naše zahrádka</figcaption>
+        </figure>
+        <div class="mood__text">
+          <p class="eyebrow"><span class="num">05</span> Atmosféra</p>
+          <h3 class="h3 reveal">Zahrádka v létě.<br>Oslavy celý rok.</h3>
+          <p class="reveal">V létě je pro vás k dispozici naše krásná zahrádka. Rádi pro vás připravíme svatby, oslavy, firemní večírky i smuteční hostiny.</p>
+          <a class="btn btn--ghost reveal" href="mailto:provozni@pivovarskysal.cz?subject=Poptávka%20akce%20—%20Pivovarská%20dílna">Poptat akci</a>
+        </div>
+        <figure class="mood__ph mood__ph--b reveal-img">
+          <img src="assets/img/stock/hospoda-4-800.webp" width="800" height="1208" alt="" loading="lazy" decoding="async">
+        </figure>
+        <figure class="mood__ph mood__ph--c reveal-img">
+          <img src="assets/img/zahradka-tym-1200.webp" width="1200" height="675" alt="Tým Pivovarské dílny v krojích na Oktoberfestu" loading="lazy" decoding="async">
+          <figcaption>Oktoberfest v dílně</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 06 KONTAKT ============ -->
+    <section class="visit" id="kontakt" aria-labelledby="kontakt-h">
+      <div class="container visit__grid">
+        <div class="visit__main">
+          <p class="eyebrow"><span class="num">06</span> Návštěva</p>
+          <h2 id="kontakt-h" class="h2 reveal">Stavte se.<br><em>Čep je připravený.</em></h2>
+          <div class="visit__cta reveal">
+            <a class="btn btn--brass btn--lg" href="tel:+420722939930">Rezervace · 722 939 930</a>
+            <a class="ulink" href="mailto:provozni@pivovarskysal.cz">provozni@pivovarskysal.cz</a>
+          </div>
+          <dl class="facts reveal">
+            <div><dt>Adresa</dt><dd>Krajská 61/4<br>412 01 Litoměřice</dd></div>
+            <div><dt>Kuchyně</dt><dd>Poslední objednávky<br>Po–Čt 21:00 · Pá–So 21:30<br>Ne 20:00</dd></div>
+            <div><dt>Akce</dt><dd>Svatby, oslavy, večírky<br><a class="ulink" href="mailto:provozni@pivovarskysal.cz?subject=Poptávka%20akce">poptat e-mailem</a></dd></div>
+            <div><dt>Odkazy</dt><dd><a class="ulink" href="https://www.facebook.com/pivovarskysal.cz/" target="_blank" rel="noopener">Facebook ↗</a><br><a class="ulink" href="https://mapy.com/cs/zakladni?q=Krajsk%C3%A1%2061%2F4%2C%20Litom%C4%9B%C5%99ice" target="_blank" rel="noopener">Navigovat ↗</a></dd></div>
+          </dl>
+        </div>
+
+        <aside class="coaster reveal" aria-labelledby="hodiny-h">
+          <div class="coaster__disc">
+            <h3 id="hodiny-h" class="coaster__title">Otevírací doba</h3>
+            <p class="coaster__status" data-status>—</p>
+            <table class="hours">
+              <tbody>
+                <tr data-day="1"><th scope="row">Pondělí</th><td>11:00 – 23:00</td></tr>
+                <tr data-day="2"><th scope="row">Úterý</th><td>11:00 – 23:00</td></tr>
+                <tr data-day="3"><th scope="row">Středa</th><td>11:00 – 23:00</td></tr>
+                <tr data-day="4"><th scope="row">Čtvrtek</th><td>11:00 – 23:00</td></tr>
+                <tr data-day="5"><th scope="row">Pátek</th><td>11:00 – 24:00</td></tr>
+                <tr data-day="6"><th scope="row">Sobota</th><td>11:00 – 24:00</td></tr>
+                <tr data-day="0"><th scope="row">Neděle</th><td>11:00 – 21:00</td></tr>
+              </tbody>
+            </table>
+            <svg class="coaster__tally" aria-hidden="true"><use href="#carky"/></svg>
+          </div>
+        </aside>
+      </div>
+
+      <div class="map container reveal">
+        <div class="map__frame" id="mapFrame">
+          <button class="map__load" type="button" data-map>
+            <svg aria-hidden="true"><use href="#soudek"/></svg>
+            <span>Zobrazit mapu</span>
+            <small>Načte Google Mapy</small>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot__inner container">
+      <div class="foot__mark">
+        <span class="foot__word">Pivovarská</span>
+        <span class="foot__word foot__word--big">Dílna <svg aria-hidden="true"><use href="#carky"/></svg></span>
+      </div>
+      <nav class="foot__nav" aria-label="Patička">
+        <a href="#sud">Dílna</a><a href="#pivo">Pivo</a><a href="#poledni">Polední menu</a><a href="#listek">Lístek</a><a href="#atmosfera">Atmosféra</a><a href="#kontakt">Kontakt</a>
+      </nav>
+      <div class="foot__legal">
+        <p>Krajská 61/4, 412 01 Litoměřice · <a href="tel:+420722939930">722 939 930</a></p>
+        <p>Provozovatel: GP-Restaurant s.r.o. · IČ 07814526</p>
+        <p class="foot__credit">Některé fotografie a video jsou ilustrační.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="assets/js/main.js" defer></script>
+  <script type="module" src="assets/js/barrel.js"></script>
+</body>
+</html>
