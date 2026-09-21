@@ -202,6 +202,8 @@ button { font: inherit; color: inherit; }
   padding: calc(var(--nav-h) + 24px) var(--gutter) calc(28px + env(safe-area-inset-bottom));
   opacity: 0; transition: opacity .5s var(--ease);
 }
+.mnav[hidden] { display: none; }
+.mnav:not(.is-open) { pointer-events: none; }
 .mnav.is-open { opacity: 1; }
 .mnav nav { display: flex; flex-direction: column; }
 .mnav nav a {
